@@ -142,6 +142,15 @@ footer {
     height: 400px;
 }
 
+footer * {
+    margin: 0;
+}
+
+footer nav {
+    background-color: transparent;
+}
+
+
 /* Organisation du contenu du footer  */
 
 
