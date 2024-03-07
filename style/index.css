@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Délimitation du footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(136, 255, 0); */
+    background: linear-gradient(to top, grey, white 80%);
+    margin-top: 800px;
+    height: 400px;
+}
+
+/* Organisation du contenu du footer  */
+
+.bi {
+    margin-inline: 0.3rem; /*Marge des images*/
+}
+
+.footer-container {
+    display: flex;
+    margin: 1rem;
+    line-height: 2rem;
+}
+
+/* Marge du contenu footer  */
+.footer-container>* {
+    margin-inline: 1rem;
+}
+
+.footer-logo {
+    width: 180px;
+    border-radius: 50%;
+    margin-inline: auto;
+}
+
+footer .infos {
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-horaires {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-reseaux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.network-image {
+    width: 150px;
+}
