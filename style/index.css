@@ -38,12 +38,14 @@ footer {
     margin-inline: auto;
 }
 
+/* Container adresse / Mail / Téléphone */
 footer .infos {
     line-height: 2rem;
     display: flex;
     flex-direction: column;
 }
 
+/* Navbar des différentes pages */
 .footer-section {
     display: flex;
     flex-direction: column;
@@ -54,17 +56,26 @@ footer .infos {
     color: black;
 }
 
+/* Listes des horaires */
 .footer-horaires {
     display: flex;
     flex-direction: column;
 }
 
+/* Boite des réseaux */
 .footer-reseaux {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Taille image agri */
 .network-image {
     width: 150px;
+}
+
+/* Trademark sous le footer  */
+.trademark {
+    margin-top: 1rem;
+    text-align: center;
 }
