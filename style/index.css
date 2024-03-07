@@ -1,6 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-    margin: 0;
     box-sizing: border-box;
+}
+
+/* Style du header */
+
+header {
+    height: 50vh;
+}
+
+header .background-header {
+    background-image: url(/image/back_1.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+
+}
+
+header .background-header-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #000000 16%, #00000000 36%);
+    opacity: 0.83;
+    mix-blend-mode: multiply;
+}
+
+.logo-neg {
+    width: 30%;
+}
+
+.menu-header-pages a {
+    text-decoration: none;
+    font-family: "Barlow Semi Condensed";
+    font-size: 1.5rem;
+    color: white;
+}
+
+.menu-header-pages {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav {
+    background-color: #000000;
+    display: flex;
+}
+
+/* Style du Main */
+
+/* body {
+    display: flex;
+    justify-content: center;
+}
+ */
+main {
+    display: flex;
+    background-color: #fcfcfc;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.thumbnail {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    gap: 40px;
+    align-items: center;
+    padding: 2rem 2rem;
+
+}
+
+.article {
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    width: 22rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.article h3 {
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+.article img {
+    width: 10rem;
+    padding: 1rem 1rem;
+    border-radius: 25px;
+}
+
+.article-content p {
+    font-family: "Barlow", sans-serif;
+    text-align: justify;
+    padding: 0 1rem 0 1rem;
+}
+
+.read-button {
+    /* background-color: #2a2a2a; */
+    background: linear-gradient(#000000, #807f7f);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.read-button:hover {
+    background: linear-gradient(#807f7f, #000000);
+    color: black;
+}
+
+.read-button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Barlow", sans-serif;
+    padding: 1rem 1rem 1rem 1rem;
+    line-height: 3;
+
 }
 
 /* Délimitation du footer */
