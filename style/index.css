@@ -17,7 +17,9 @@ footer {
 
 /* Organisation du contenu du footer  */
 
+
 .bi {
+    display: inline-block;
     margin-inline: 0.3rem; /*Marge des images*/
 }
 
@@ -67,6 +69,10 @@ footer .infos {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footer-reseaux .bi {
+    font-size: 2rem;
 }
 
 /* Taille image agri */
