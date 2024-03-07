@@ -54,12 +54,11 @@ nav {
 
 /* Style du Main */
 
-body {
+/* body {
     display: flex;
     justify-content: center;
-    background-color: #000000;
 }
-
+ */
 main {
     display: flex;
     background-color: #fcfcfc;
@@ -129,4 +128,87 @@ main {
     padding: 1rem 1rem 1rem 1rem;
     line-height: 3;
 
+}
+
+/* Délimitation du footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(136, 255, 0); */
+    background: linear-gradient(to top, grey, white 80%);
+    margin-top: 800px;
+    height: 400px;
+}
+
+/* Organisation du contenu du footer  */
+
+
+.bi {
+    display: inline-block;
+    margin-inline: 0.3rem; /*Marge des images*/
+}
+
+.footer-container {
+    display: flex;
+    margin: 1rem;
+    line-height: 2rem;
+}
+
+/* Marge du contenu footer  */
+.footer-container>* {
+    margin-inline: 1rem;
+}
+
+.footer-logo {
+    width: 180px;
+    border-radius: 50%;
+    margin-inline: auto;
+}
+
+/* Container adresse / Mail / Téléphone */
+footer .infos {
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar des différentes pages */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Listes des horaires */
+.footer-horaires {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Boite des réseaux */
+.footer-reseaux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-reseaux .bi {
+    font-size: 2rem;
+}
+
+/* Taille image agri */
+.network-image {
+    width: 150px;
+}
+
+/* Trademark sous le footer  */
+.trademark {
+    margin-top: 1rem;
+    text-align: center;
 }
