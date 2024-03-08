@@ -54,30 +54,51 @@ nav {
 
 /* Style du Main */
 
-/* body {
-    display: flex;
-    justify-content: center;
+body {
+    background-image: url(/image/vline.png);
+    background-repeat: repeat-y;
+    background-position: 6%;
+
 }
- */
+
 main {
-    display: flex;
-    background-color: #fcfcfc;
-    height: auto;
+    height: 100%;
+    display: inline-block;
+    flex-direction: column;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    width: fit-content;
-    border-radius: 20px;
+    width: 100%;
+    margin-top: 8rem;
 }
 
 .thumbnail {
-    margin: 0;
+    margin: auto;
+    background-color: #fcfcfc;
+    width: 80%;
+    height: 40%;
     display: flex;
     justify-content: center;
-    margin: 0;
     gap: 40px;
-    align-items: center;
-    padding: 2rem 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
 
+.page-title {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    color: #ffffff;
+    width: 300px;
+    height: 50px;
+    left: 4rem;
+    clip-path: polygon(0 30%, 100% 30%, 85% 100%, 0% 100%);
+    background-color: transparent;
+    background-image: linear-gradient(210deg, #FFFFFF 0%, #000000 50%);
+    padding-top: 0.9rem;
+    padding-left: 3rem;
+    font-family: "Barlow Semi Condensed";
+    font-size: 1.5rem;
 }
 
 .article {
@@ -89,7 +110,6 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .article h3 {
@@ -110,7 +130,6 @@ main {
 }
 
 .read-button {
-    /* background-color: #2a2a2a; */
     background: linear-gradient(#000000, #807f7f);
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -138,7 +157,7 @@ footer {
     justify-content: center;
     /* background-color: rgb(136, 255, 0); */
     background: linear-gradient(to top, grey, white 80%);
-    margin-top: 800px;
+    /* margin-top: 800px; */
     height: 400px;
 }
 
@@ -156,7 +175,8 @@ footer nav {
 
 .bi {
     display: inline-block;
-    margin-inline: 0.3rem; /*Marge des images*/
+    margin-inline: 0.3rem;
+    /*Marge des images*/
 }
 
 .footer-container {
