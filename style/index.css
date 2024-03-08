@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+
+/* Définition de la police générale du site  */
+:root {
+    --primary-font : "Barlow Semi Condensed";
+}
+
 /* Style du header */
 
 header {
@@ -137,8 +143,9 @@ footer {
     align-items: center;
     justify-content: center;
     /* background-color: rgb(136, 255, 0); */
+    font-family: var(--primary-font);
     background: linear-gradient(to top, grey, white 80%);
-    margin-top: 800px;
+    margin-top: auto;
     height: 400px;
 }
 
@@ -157,6 +164,17 @@ footer nav {
 .bi {
     display: inline-block;
     margin-inline: 0.3rem; /*Marge des images*/
+}
+
+footer .bi-facebook {
+    color:#0866ff;
+}
+
+footer .bi-instagram {
+    color: rgb(238, 228, 228);
+    background: linear-gradient(to top, yellow, purple);
+    border-radius: 7px;
+    padding: 2px;
 }
 
 .footer-container {
@@ -192,6 +210,12 @@ footer .infos {
 .footer-section a {
     text-decoration: none;
     color: black;
+    font-weight: 700;
+}
+
+.footer-section a:hover {
+    color: #fd7e14;
+    transition: color 0.5s;
 }
 
 /* Listes des horaires */
@@ -214,6 +238,7 @@ footer .infos {
 /* Taille image agri */
 .network-image {
     width: 150px;
+    margin-top: 5px;
 }
 
 /* Trademark sous le footer  */
