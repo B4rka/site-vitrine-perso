@@ -4,45 +4,43 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 
 /* Définition de la police générale du site  */
 :root {
-    --primary-font : "Barlow Semi Condensed";
+    --primary-font: "Barlow Semi Condensed";
 }
 
 /* Style du header */
 
 header {
-    height: 50vh;
-}
-
-header .background-header {
+    height: 45vh;
     background-image: url(/image/back_1.jpg);
     background-position: center, center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
     width: 100%;
-
+    display: block;
 }
 
-header .background-header-overlay {
-    height: 100%;
+.logo-neg img {
     width: 100%;
-    background-color: transparent;
-    background-image: linear-gradient(180deg, #000000 16%, #00000000 36%);
-    opacity: 0.83;
-    mix-blend-mode: multiply;
 }
 
 .logo-neg {
-    width: 30%;
+    width: 250px;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
 }
 
 .menu-header-pages a {
     text-decoration: none;
-    font-family: "Barlow Semi Condensed";
+    font-family: var(--primary-font);
     font-size: 1.5rem;
     color: white;
 }
@@ -51,11 +49,34 @@ header .background-header-overlay {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    position: relative;
 }
 
-nav {
-    background-color: #000000;
-    display: flex;
+.menu-header-pages :nth-child(1) {
+    color: rgb(225 199 52);
+
+}
+
+.social-link {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.social-link a {
+    text-decoration: none;
+    color: rgb(225 199 52);
+
+}
+
+/* barre nav */
+
+.menu-header {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #000000 35%, #00000000 100%);
+    opacity: 0.90;
+    padding-bottom: 5rem;
 }
 
 /* Style du Main */
@@ -163,11 +184,12 @@ footer nav {
 
 .bi {
     display: inline-block;
-    margin-inline: 0.3rem; /*Marge des images*/
+    margin-inline: 0.3rem;
+    /*Marge des images*/
 }
 
 footer .bi-facebook {
-    color:#0866ff;
+    color: #0866ff;
 }
 
 footer .bi-instagram {
