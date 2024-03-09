@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Définition de la police générale du site  */
+:root {
+    --primary-font: "Barlow Semi Condensed";
+}
+
+/* Style du header */
+
+header {
+    height: 45vh;
+    background-image: url(/image/back_1.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    display: block;
+    box-shadow: 0px 0px 20px 0px #2a2a2a;
+    margin-bottom: 3rem;
+}
+
+.logo-neg img {
+    width: 100%;
+}
+
+.logo-neg {
+    width: 250px;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+
+.menu-header-pages a {
+    text-decoration: none;
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    color: white;
+}
+
+.menu-header-pages {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.menu-header-pages a:hover {
+    color: rgb(225 199 52);
+    transition: color 0.5s;
+}
+
+.social-link {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.social-link a {
+    text-decoration: none;
+    color: rgb(225 199 52);
+
+}
+
+/* barre nav */
+
+.menu-header {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #000000 35%, #00000000 100%);
+    opacity: 0.90;
+    padding-bottom: 5rem;
+}
+
+/* Style du Main */
+
+body {
+    background-image: url(/image/vline.png);
+    background-repeat: repeat-y;
+    background-position: 6%;
+
+}
+
+main {
+    height: 100%;
+    display: inline-block;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+/* CSS DU CAROUSEL */
+/* CSS DU CAROUSEL */
+
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+@keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+@keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+  
+ *::-webkit-scrollbar {
+    width: 0;
+  }
+  
+ *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+ *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+  
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel {
+    position: relative;
+    padding-top: 40%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+    width: 600px;
+    margin: auto;
+    border-radius: 46px;
+    border: #fcfcfc 20px solid;
+  }
+  
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: #fcfcfc;
+    counter-increment: item;
+  }
+  
+  /* .carousel__slide:nth-child(even) {
+    background-color: #99f;
+  } */
+  
+  .carousel__slide:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+  
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+  
+    .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart, snap;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+      animation-name: none;
+    }
+  }
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  }
+  
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block;
+  }
+  
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+  }
+
+  .carousel__navigation-button:active {
+    background-color: rgb(225 199 52);
+  }
+
+  .carousel__navigation-button:hover {
+    background-color: rgb(225 199 52);
+  }
+
+  
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 0;
+    margin-top: 45%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel::before,
+  .carousel__prev {
+    left: -1rem;
+  }
+  
+  .carousel::after,
+  .carousel__next {
+    right: -1rem;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+    content: '';
+    z-index: 1;
+    background-color: #333;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .carousel::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+  }
+  
+  .carousel::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+  }
+  
+/* FIN DU CAROUSEL
+FIN DU CAROUSEL */
+
+.thumbnail {
+    margin: auto;
+    background-color: #fcfcfc;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.page-title {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    color: #ffffff;
+    width: 300px;
+    height: 50px;
+    left: 4rem;
+    clip-path: polygon(0 30%, 100% 30%, 85% 100%, 0% 100%);
+    background-color: transparent;
+    background-image: linear-gradient(210deg, #FFFFFF 0%, #000000 50%);
+    padding-top: 0.9rem;
+    padding-left: 3rem;
+    font-family: "Barlow Semi Condensed";
+    font-size: 1.5rem;
+}
+
+.article {
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    width: 22rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 5%;
+}
+
+.article h3 {
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+.article img {
+    width: 10rem;
+    padding: 1rem 1rem;
+    border-radius: 25px;
+}
+
+.article-content p {
+    font-family: "Barlow", sans-serif;
+    text-align: justify;
+    padding: 0 1rem 0 1rem;
+}
+
+.read-button {
+    background: linear-gradient(#000000, #807f7f);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.read-button:hover {
+    background: linear-gradient(#807f7f, #000000);
+    color: black;
+}
+
+.read-button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Barlow", sans-serif;
+    padding: 1rem 1rem 1rem 1rem;
+    line-height: 3;
+
+}
+
+/* Délimitation du footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(136, 255, 0); */
+    font-family: var(--primary-font);
+    background: linear-gradient(290deg, black 13%, white 91%);
+    opacity: 0.9;
+    margin-top: auto;
+    height: 400px;
+    box-shadow: 0px 0px 20px 0px #2a2a2a;
+}
+
+footer * {
+    margin: 0;
+}
+
+footer nav {
+    background-color: transparent;
+}
+
+
+/* Organisation du contenu du footer  */
+
+
+.bi {
+    display: inline-block;
+    margin-inline: 0.3rem;
+    /*Marge des images*/
+
+}
+
+footer .bi-facebook {
+    color: #0866ff;
+}
+
+footer .bi-instagram {
+    color: rgb(238, 228, 228);
+    background: linear-gradient(to top, yellow, purple);
+    border-radius: 7px;
+    padding: 2px;
+}
+
+.footer-container {
+    display: flex;
+    margin: 1rem;
+    line-height: 2rem;
+}
+
+/* Marge du contenu footer  */
+.footer-container>* {
+    margin-inline: 1rem;
+}
+
+.footer-logo {
+    width: 180px;
+    border-radius: 50%;
+    margin-inline: auto;
+}
+
+/* Container adresse / Mail / Téléphone */
+footer .infos {
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar des différentes pages */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.footer-section a:hover {
+    color: rgb(225 199 52);
+    transition: color 0.5s;
+}
+
+/* Listes des horaires */
+.footer-horaires {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Boite des réseaux */
+.footer-reseaux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-reseaux .bi {
+    font-size: 2rem;
+}
+
+/* Taille image agri */
+.network-image {
+    width: 150px;
+    margin-top: 5px;
+}
+
+/* Trademark sous le footer  */
+.trademark {
+    margin-top: 1rem;
+    text-align: center;
+}
