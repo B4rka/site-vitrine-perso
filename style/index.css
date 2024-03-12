@@ -263,7 +263,7 @@ footer .infos {
 }
 
 .footer-section a:hover {
-    color: #fd7e14;
+    color: rgb(225 199 52);
     transition: color 0.5s;
 }
 
