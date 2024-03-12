@@ -54,6 +54,11 @@ header {
     position: relative;
 }
 
+.menu-header-pages :nth-child(5) {
+    color: rgb(225 199 52);
+
+}
+
 .menu-header-pages a:hover {
     color: rgb(225 199 52);
     transition: color 0.5s;
