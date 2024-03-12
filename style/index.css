@@ -17,7 +17,7 @@ body {
 /* Style du header */
 
 header {
-    height: 45vh;
+    height: 50vh;
     background-image: url(/image/back_1.jpg);
     background-position: center, center;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ header {
 body {
     background-image: url(/image/vline.png);
     background-repeat: repeat-y;
-    background-position: 6%;
+    background-position: 4.4vw;
 
 }
 
@@ -102,7 +102,7 @@ main {
 }
 
 .titre {
-    margin: auto;
+    margin-left: 2vw;
     max-width: 1500px;
 }
 
