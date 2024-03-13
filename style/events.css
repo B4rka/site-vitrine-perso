@@ -235,7 +235,7 @@ main {
   
   @media (hover: hover) {
     
-    .carousel__snapper {
+    /* .carousel__snapper {
       animation-name: tonext, snap;
       animation-timing-function: ease;
       animation-duration: 4s;
@@ -244,7 +244,7 @@ main {
   
     .carousel__slide:last-child .carousel__snapper {
       animation-name: tostart, snap;
-    }
+    } */
   }
   
   @media (prefers-reduced-motion: reduce) {
@@ -388,11 +388,14 @@ FIN DU CAROUSEL */
     align-items: center;
     margin-inline: auto;
     margin-top: 5%;
+    line-height: 1.7rem;
+    font-family: var(--primary-font);
 }
 
 .article h3 {
     margin: 0;
-    font-family: "Barlow", sans-serif;
+    margin-top: 0.3rem;
+    /* font-family: "Barlow", sans-serif; */
 }
 
 .article img {
@@ -402,15 +405,27 @@ FIN DU CAROUSEL */
 }
 
 .article-content p {
-    font-family: "Barlow", sans-serif;
+    /* font-family: "Barlow", sans-serif; */
     text-align: justify;
     padding: 0 1rem 0 1rem;
+    margin: 0;
+}
+
+.article a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.article a:hover {
+  color: rgb(225 199 52);
 }
 
 .read-button {
     background: linear-gradient(#000000, #807f7f);
     border-radius: 10px;
     margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 .read-button:hover {
