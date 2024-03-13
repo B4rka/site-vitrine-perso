@@ -86,7 +86,8 @@ body {
     background-image: url(/image/vline.png);
     background-repeat: repeat-y;
     background-position: 4.4vw;
-
+    font-family: var(--primary-font);
+    line-height: 1.5;
 }
 
 main {
@@ -120,6 +121,111 @@ main {
     font-family: "Barlow Semi Condensed";
     font-size: 1.5rem;
 }
+
+/* style pour chaque bière */
+main section article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article h2 {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgbeer {
+    max-width: 268px;
+    height: 268px;
+    display: block;
+}
+
+article ul {
+    max-width: 30vw;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beer-description {
+    max-width: 296px;
+}
+
+/* Style progress bar */
+
+.progress-label {
+    position: relative;
+    margin: 0;
+}
+
+.progress-label::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+progress {
+    opacity: 0;
+}
+
+.progress-container-amertume,
+.progress-container-corps {
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    height: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+/* **la vincent** progress bar  */
+
+.vincent .progress-container-amertume::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 55%;
+    background: rgb(225 199 52);
+}
+
+.vincent .progress-container-corps::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    background: rgb(225 199 52);
+}
+
+/* **la Yavuz** progress bar  */
+
+.yavuz .progress-container-amertume::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 90%;
+    background: rgb(225 199 52);
+}
+
+.yavuz .progress-container-corps::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    background: rgb(225 199 52);
+}
+
 
 /* Délimitation du footer */
 
