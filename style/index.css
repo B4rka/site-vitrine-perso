@@ -116,6 +116,7 @@ main {
     gap: 40px;
     padding: 1rem;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .page-title {
