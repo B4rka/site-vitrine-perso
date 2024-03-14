@@ -102,11 +102,16 @@ main {
 }
 
 /* test de responsive pour un grand ecran */
+
+main section {
+    margin: 3rem auto;
+}
+
 @media screen and (width >=1700px) {
-    .classic {
+    main section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 0rem 10rem;
+        margin: 3rem 10rem;
         gap: 5rem
     }
 }
@@ -143,11 +148,23 @@ main section article {
     gap: 2rem;
 }
 
+@media screen and (width >=1700px) {
+    main section article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        gap: 2rem;
+    }
+}
+
 article h2 {
     width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     color: rgb(225 199 52);
     ;
 
@@ -203,6 +220,10 @@ progress {
     overflow: hidden;
     margin-top: 8px;
     box-shadow: 0px 0px 4px 1px #2a2a2a59;
+}
+
+.soldout {
+    color: red;
 }
 
 /* **la vincent** progress bar  */
@@ -312,6 +333,72 @@ progress {
     left: 0;
     height: 100%;
     width: 35%;
+    background: rgb(225 199 52);
+}
+
+/* **L'Anaé ** progress bar  */
+
+.anae .progress-container-amertume::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: rgb(225 199 52);
+}
+
+.anae .progress-container-corps::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%;
+    background: rgb(225 199 52);
+}
+
+/* **La Gab' ** progress bar  */
+
+.gab .progress-container-amertume::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%;
+    background: rgb(225 199 52);
+}
+
+.gab .progress-container-corps::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(225 199 52);
+}
+
+/* **La Gab' ** progress bar  */
+
+.mat .progress-container-amertume::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%;
+    background: rgb(225 199 52);
+}
+
+.mat .progress-container-corps::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
     background: rgb(225 199 52);
 }
 
