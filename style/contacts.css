@@ -4,15 +4,20 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-}
-
-
 /* Définition de la police générale du site  */
 :root {
     --primary-font: "Barlow Semi Condensed";
 }
+
+body {
+    margin: 0;
+    background-image: url(/image/vline.png);
+    background-repeat: repeat-y;
+    background-position: 4.4vw;
+}
+
+
+
 
 /* Style du header */
 
@@ -82,13 +87,6 @@ header {
 
 /* Style du Main */
 
-body {
-    background-image: url(/image/vline.png);
-    background-repeat: repeat-y;
-    background-position: 4.4vw;
-
-}
-
 main {
     height: 100%;
     display: inline-block;
@@ -96,7 +94,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 
 .titre {
@@ -356,22 +354,80 @@ footer .infos {
     text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-  
-}
+@media screen and (max-width : 768px) {
+    body {
+        background-position: 8vw;
+    }
 
-@media screen and (max-width:768px) {
+    main {
+        margin-top: 1rem;
+    }
+
+    .titre {
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .thumbnail {
+        background-color: transparent;
+        width: 100%;
+        gap: none;
+    }
+
+    .form-group input[type="submit"] {
+        width: 50%;
+
+    }
+
+    .info-bloc {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .info-resa {
+        width: 90%;
+    }
+
+    .form-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .location-info {
+        padding: 1rem;
+    }
+
+    .location-info h3 {
+        margin: 0 0 1rem 0;
+    }
+
+    .reservation h3 {
+        margin: 0 0 1rem 0;
+    }
+
+    .maps {
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .maps iframe {
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
 
     .carousel {
-    width: 490px;
-  }
+        width: 490px;
+    }
 
-  .footer-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    max-height: 100%;
-    justify-items: center;
-  }
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        max-height: 100%;
+        justify-items: center;
+    }
 }
+
+@media screen and (max-width: 480px) {}
