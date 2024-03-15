@@ -624,6 +624,7 @@ footer .infos {
     margin-top: 1rem;
 
   }
+
   .carousel {
     width: 490px;
   }
@@ -641,4 +642,10 @@ footer .infos {
     margin-inline: 0rem;
   }
 
+}
+
+@media screen and (max-width:1200px) {
+  .menu-header-pages {
+    margin-top: 1.5rem;
+  }
 }
