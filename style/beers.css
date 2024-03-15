@@ -28,6 +28,13 @@ header {
 
 }
 
+.menu-burger,
+#toggle {
+    display: none;
+}
+
+
+
 .logo-neg img {
     width: 100%;
 }
@@ -148,16 +155,6 @@ main section article {
     gap: 2rem;
 }
 
-@media screen and (width >=1700px) {
-    main section article {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0rem;
-        margin-top: 0rem;
-        gap: 2rem;
-    }
-}
 
 article h2 {
     width: 200px;
@@ -316,7 +313,7 @@ progress {
 
 /* **L'ayoub ** progress bar  */
 
-.ayub .progress-container-amertume::before {
+.ayoub .progress-container-amertume::before {
     content: "";
     position: absolute;
     top: 0;
@@ -326,7 +323,7 @@ progress {
     background: rgb(225 199 52);
 }
 
-.ayub .progress-container-corps::before {
+.ayoub .progress-container-corps::before {
     content: "";
     position: absolute;
     top: 0;
@@ -516,25 +513,113 @@ footer .infos {
     text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-  
-}
+@media screen and (max-width: 480px) {}
 
 @media screen and (max-width:768px) {
-    main {
-        margin-top: 1rem;
+
+    .menu-header-pages {
+        display: none;
     }
 
-  .carousel {
-    width: 490px;
-  }
+    .social-link {
+        display: none;
 
-  .footer-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    max-height: 100%;
-    justify-items: center;
-  }
+    main {
+        margin-top: 1rem;
+
+    }
+
+    .menu-burger {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 2rem auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .menu-header-pages {
+        display: none;
+        flex-direction: column;
+        background: transparent;
+        height: 220px;
+    }
+
+    .menu-header-pages a {
+
+        width: 100%;
+        text-align: center;
+    }
+
+    #toggle:checked+.menu-header-pages {
+        display: flex;
+
+    }
+
+    .logo-neg {
+        width: 350px;
+        position: relative;
+        width: 350px;
+        margin: 0rem auto;
+        padding: 1rem;
+        top: auto;
+        left: auto;
+    }
+
+    header {
+        height: 70vh;
+    }
+
+    .carousel {
+        width: 490px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        max-height: 100%;
+        justify-items: center;
+    }
+
+    .footer-container>* {
+        margin-inline: 0rem;
+    }
+
+    main {
+        margin-top: 3rem;
+
+    }
+
+    main section article {
+        display: flex;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .imgbeer {
+        max-width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+
+
+
+}
+
+@media screen and (width >=1700px) {
+    main section article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        gap: 2rem;
+    }
 }
