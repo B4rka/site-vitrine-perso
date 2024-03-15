@@ -516,12 +516,17 @@ footer .infos {
 @media screen and (max-width: 480px) {}
 
 @media screen and (max-width:768px) {
+
     .menu-header-pages {
         display: none;
     }
 
     .social-link {
         display: none;
+
+    main {
+        margin-top: 1rem;
+
     }
 
     .menu-burger {
