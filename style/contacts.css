@@ -109,12 +109,13 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 3rem;
 }
 
 .titre {
     margin-left: 2vw;
     max-width: 1500px;
+    margin-bottom: 2rem;
 }
 
 .thumbnail {
@@ -493,30 +494,30 @@ footer .infos {
         align-items: center;
         max-height: 100%;
         justify-items: center;
-      }
+    }
 
     .footer-container>* {
         margin-inline: 0rem;
     }
 
-    .footer-logo{
+    .footer-logo {
         grid-column-start: 1;
         grid-column-end: 3;
-      }
-    
-      .footer-reseaux{
+    }
+
+    .footer-reseaux {
         grid-column-start: 1;
         grid-column-end: 3;
-      }
-    
-      .footer-container>* {
+    }
+
+    .footer-container>* {
         margin-inline: 0rem;
-      }
-    
-      .footer-section{
+    }
+
+    .footer-section {
         display: none;
-      }
-    
+    }
+
 }
 
 @media screen and (max-width:1200px) {
