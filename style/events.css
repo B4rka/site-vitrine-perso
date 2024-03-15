@@ -620,7 +620,10 @@ footer .infos {
     height: 70vh;
   }
 
+  main {
+    margin-top: 1rem;
 
+  }
   .carousel {
     width: 490px;
   }
@@ -637,4 +640,5 @@ footer .infos {
   .footer-container>* {
     margin-inline: 0rem;
   }
+
 }
