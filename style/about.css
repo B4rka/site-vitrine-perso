@@ -377,10 +377,6 @@ footer .infos {
         height: 70vh;
     }
 
-    .carousel {
-        width: 490px;
-    }
-
     .footer-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
