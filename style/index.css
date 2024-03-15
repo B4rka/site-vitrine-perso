@@ -15,7 +15,7 @@
 
 body {
     margin: 0;
-    font-style: var(--primary-font);
+    font-family: var(--primary-font);
     line-height: 1.5;
 }
 
@@ -121,6 +121,7 @@ main {
 .titre {
     margin-left: 2vw;
     max-width: 1500px;
+    margin-bottom: 2rem;
 }
 
 .thumbnail {
@@ -148,7 +149,6 @@ main {
     background-image: linear-gradient(210deg, #FFFFFF 0%, #000000 0%);
     padding-top: 0.9rem;
     padding-left: 3rem;
-    font-family: "Barlow Semi Condensed";
     font-size: 1.5rem;
 }
 
@@ -156,48 +156,75 @@ main {
     background-color: #e2e2e2;
     border-radius: 20px;
     width: 22rem;
-    height: auto;
+    min-height: 490px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    box-shadow: 0px 0px 10px 1px #2a2a2a57;
     align-items: center;
+    justify-content: center;
 }
 
 .article h3 {
     margin: 0;
-    font-family: "Barlow", sans-serif;
 }
 
-.article img {
+/* .article img {
     width: 10rem;
     padding: 1rem 1rem;
-    border-radius: 25px;
+    border-radius: 50px;
+} */
+
+.new-anae {
+    width: 160px;
+    height: 185px;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+
+}
+
+.cult {
+    width: 250px;
+    height: 173px;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+}
+
+.cuve {
+    width: 200px;
+    margin-bottom: 1rem;
+    border-radius: 16px;
 }
 
 .article-content p {
-    font-family: "Barlow", sans-serif;
-    text-align: justify;
+    text-align: center;
     padding: 0 1rem 0 1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
 }
 
 .read-button {
     background: linear-gradient(#000000, #807f7f);
     border-radius: 10px;
     margin-bottom: 1rem;
+    box-shadow: 0px 2px 12px 2px #2a2a2a80;
 }
 
 .read-button:hover {
-    background: linear-gradient(#807f7f, #000000);
+    /* background: linear-gradient(#ffffff, var(--secondary-color)); */
     color: black;
+    background: var(--secondary-color);
 }
 
 .read-button a {
     text-decoration: none;
     color: #ffffff;
-    font-family: "Barlow", sans-serif;
     padding: 1rem 1rem 1rem 1rem;
     line-height: 3;
 
+}
+
+.read-button a:hover {
+    color: black;
 }
 
 /* Délimitation du footer */
