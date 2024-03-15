@@ -568,6 +568,10 @@ footer .infos {
     height: 30vh;
   }
 
+  main {
+    margin-top: 1rem;
+}
+
   .carousel {
     width: 490px;
   }
