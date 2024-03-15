@@ -309,13 +309,13 @@ footer .infos {
 
 @media screen and (max-width: 480px) {}
 
-    main {
-        margin-top: 1rem;
-    }
+main {
+    margin-top: 1rem;
+}
 
-  .carousel {
+.carousel {
     width: 490px;
-  }
+}
 
 @media screen and (max-width:768px) {
     .menu-header-pages {
@@ -404,4 +404,10 @@ footer .infos {
         display: none;
       }
     
+}
+
+@media screen and (max-width:1200px) {
+    .menu-header-pages {
+        margin-top: 1.5rem;
+    }
 }

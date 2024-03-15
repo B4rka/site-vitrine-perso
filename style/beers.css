@@ -595,20 +595,6 @@ footer .infos {
 
     }
 
-    main section article {
-        display: flex;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-        gap: 1rem;
-        flex-direction: column;
-        align-items: baseline;
-    }
-
-    .imgbeer {
-        max-width: 150px;
-        height: 150px;
-        margin: auto;
-    }
     .footer-logo{
         grid-column-start: 1;
         grid-column-end: 3;
@@ -626,10 +612,42 @@ footer .infos {
       .footer-section{
         display: none;
       }
-    
 
+    main section article {
+        display: flex;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: baseline;
+    }
 
+    .imgbeer {
+        max-width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+
+    article h2 {
+        width: 100%;
+    }
+
+    article ul {
+        max-width: 100%
+    }
+
+    .beer-description {
+        max-width: none;
+        margin-top: 0.5rem;
+        margin-right: 2rem;
+    }
 }
+
+@media screen and (max-width:1200px) {
+    .menu-header-pages {
+        margin-top: 1.5rem;
+    }
+    }
 
 @media screen and (width >=1700px) {
     main section article {
