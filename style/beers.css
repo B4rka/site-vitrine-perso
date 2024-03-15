@@ -111,7 +111,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 3rem;
 }
 
 /* test de responsive pour un grand ecran */
@@ -633,23 +633,23 @@ footer .infos {
 
     }
 
-    .footer-logo{
+    .footer-logo {
         grid-column-start: 1;
         grid-column-end: 3;
-      }
-    
-      .footer-reseaux{
+    }
+
+    .footer-reseaux {
         grid-column-start: 1;
         grid-column-end: 3;
-      }
-    
-      .footer-container>* {
+    }
+
+    .footer-container>* {
         margin-inline: 0rem;
-      }
-    
-      .footer-section{
+    }
+
+    .footer-section {
         display: none;
-      }
+    }
 
     main section article {
         display: flex;
@@ -685,7 +685,7 @@ footer .infos {
     .menu-header-pages {
         margin-top: 1.5rem;
     }
-    }
+}
 
 @media screen and (width >=1700px) {
     main section article {

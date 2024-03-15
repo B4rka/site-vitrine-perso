@@ -30,7 +30,6 @@ header {
   width: 100%;
   display: block;
   box-shadow: 0px 0px 20px 0px #2a2a2a;
-  margin-bottom: 3rem;
 }
 
 .menu-burger,
@@ -119,7 +118,7 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 3rem;
   margin-bottom: 5rem;
 }
 
@@ -646,7 +645,7 @@ footer .infos {
 
   .article {
     width: 70%;
-}
+  }
 
   .article-img {
     width: 65%;
@@ -656,7 +655,7 @@ footer .infos {
     width: 100%;
     padding: 1rem 1rem;
     border-radius: 25px;
-}
+  }
 
   .footer-container {
     display: grid;
@@ -667,12 +666,12 @@ footer .infos {
     justify-items: center;
   }
 
-  .footer-logo{
+  .footer-logo {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
-  .footer-reseaux{
+  .footer-reseaux {
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -681,7 +680,7 @@ footer .infos {
     margin-inline: 0rem;
   }
 
-  .footer-section{
+  .footer-section {
     display: none;
   }
 
