@@ -198,6 +198,35 @@ article ul {
     margin-top: 0.5rem;
 }
 
+/* background type bière */
+.vincent img,
+.yavuz img {
+    background-color: #EFD6A0;
+}
+
+.eleonore img {
+    background-color: #ffeb8a;
+}
+
+.ayoub img {
+    background-color: #4B2619;
+}
+
+.anae img {
+    background-color: #AE3030;
+}
+
+.gab img {
+    background-color: #200805;
+}
+
+.mat img {
+    background-color: #E16739;
+}
+
+.benoit img {
+    background-color: #F7C965;
+}
 
 /* Style progress bar */
 
