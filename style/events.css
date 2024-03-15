@@ -349,6 +349,7 @@ li {
   border-radius: 50%;
   font-size: 0;
   outline: 0;
+  z-index: 2;
 }
 
 .carousel::before,
@@ -364,7 +365,7 @@ li {
 .carousel::before,
 .carousel::after {
   content: '';
-  z-index: 1;
+  z-index: 2;
   background-color: #333;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
@@ -633,9 +634,28 @@ footer .infos {
 
   }
 
-  .carousel {
-    width: 490px;
+  .carousel__viewport {
+    width: 100%;
   }
+
+  .carousel {
+    width: 88%;
+    padding-top: 480px;
+  }
+
+  .article {
+    width: 70%;
+}
+
+  .article-img {
+    width: 65%;
+  }
+
+  .article img {
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 25px;
+}
 
   .footer-container {
     display: grid;
