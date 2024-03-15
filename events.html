@@ -1,200 +1,185 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style/events.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        
-        <title>Evènements | Les 3 Wilders</title>
-    </head>
-    <header id="top">
-        <nav class="menu-header">
-            <div class="logo-neg">
-                <img src="/image/logo-neg.png" alt="logo de la marque Les 3 Wilders">
-            </div>
-            <div class="menu-header-pages">
-                <a href="/index.html">Acceuil</a>
-                <a href="/beers.html">Nos bières</a>
-                <a href="/events.html">Evénements</a>
-                <a href="/contacts.html">Contacts</a>
-                <a href="/about.html">A propos</a>
-            </div>
-            <div class="social-link">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-            </div>
-        </nav>
-    </header>
-    <body>
-        <main>
-            <div class="page-title">
-                <p>Evènements</p>
-            </div>
-            <section class="carousel" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                    <!-- Slider 1 -->
-                    <li id="carousel__slide1"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <div class="article article1">
-                            <div class="article-title">
-                                <h3>RESOW</h3>
-                            </div>
-                            <div class="article-img"><img src="/image/resow.jpg" alt="">
-                            </div>
-                            <div class="article-content">
-                                <p>Date : 12/12/24</p>
-                                <p>A 19h30 (Plutôt 20h c'est des zicos, lol)</p>
-                                <p>Prix d'entrée : 5€</p>
-                                <p>Leur Youtube : <a href="#">Cliquez ici</a></p>
-                                <p>Leur Spotify : <a href="#">Cliquez ici</a></p>
-                            </div>
-        
-                            <div class="read-button"><a href="#">En savoir plus</a>
-                            </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/events.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Evènements | Les 3 Wilders</title>
+</head>
+<header id="top">
+    <nav class="menu-header">
+        <div class="logo-neg">
+            <img src="/image/logo-neg.png" alt="logo de la marque Les 3 Wilders">
+        </div>
+        <label class="menu-burger" for="toggle">☰</label>
+        <input type="checkbox" id="toggle">
+        <div class="menu-header-pages">
+            <a href="/index.html">Acceuil</a>
+            <a href="/beers.html">Nos bières</a>
+            <a href="/events.html">Evénements</a>
+            <a href="/contacts.html">Contacts</a>
+            <a href="/about.html">A propos</a>
+        </div>
+        <div class="social-link">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <div class="page-title">
+            <p>Evènements</p>
+        </div>
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <!-- Slider 1 -->
+                <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                    <div class="article article1">
+                        <div class="article-title">
+                            <h3>RESOW</h3>
                         </div>
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide4"
-                                class="carousel__prev">Go to last slide</a>
-                            <a href="#carousel__slide2"
-                                class="carousel__next">Go to next slide</a>
+                        <div class="article-img"><img src="/image/resow.jpg" alt="">
                         </div>
+                        <div class="article-content">
+                            <p>Date : 12/12/24</p>
+                            <p>A 19h30 (Plutôt 20h c'est des zicos, lol)</p>
+                            <p>Prix d'entrée : 5€</p>
+                            <p>Leur Youtube : <a href="#">Cliquez ici</a></p>
+                            <p>Leur Spotify : <a href="#">Cliquez ici</a></p>
+                        </div>
+
+                        <div class="read-button"><a href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                    </div>
+                </li>
+                <!-- Slider 2 -->
+                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                    <div class="article article2">
+                        <div class="article-title">
+                            <h3>Cult of Sacrifice</h3>
+                        </div>
+                        <div class="article-img"><img src="/image/cultOfSac.png" alt="">
+                        </div>
+                        <div class="article-content">
+                            <p>Date : 24/12/24</p>
+                            <p>A 20h00</p>
+                            <p>Prix d'entrée : PAF libre</p>
+                            <p>Leur Youtube : <a href="#">Cliquez ici</a></p>
+                            <p>Leur Spotify : <a href="#">Cliquez ici</a></p>
+                        </div>
+                        <div class="read-button"><a href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="carousel__snapper">
+                    </div>
+                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                </li>
+                <!-- Slider 3 -->
+                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                    <div class="article article3">
+                        <div class="article-img"><img src="/image/jivay.png" alt=""></div>
+                        <div class="article-title">
+                            <h3>Guest brasseur</h3>
+                        </div>
+                        <div class="article-content">
+                            <p><strong><em><u>Le 05/05/24</u></em></strong></p>
+                            <p>Venez dégustez les bières de Jivay, le chef du culte de la bière en personne !</p>
+                        </div>
+
+                        <div class="read-button"><a href="#">En savoir plus</a></div>
+                    </div>
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                </li>
+                <!-- Slider 4 -->
+                <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                    <div class="article article4">
+                        <div class="article-img"><img src="/image/brassin.jpg" alt=""></div>
+                        <div class="article-title">
+                            <h3>Nouveau brassin</h3>
+                        </div>
+                        <div class="article-content">
+                            <p><strong><em><u>Le 06/08/24</u></em></strong></p>
+                            <p>C'est la fin des vendanges et la bière nouvelle est enfin là !
+                                Une multitude de nouvelles bières éphémères vous attendent avec de nouvelles saveurs !
+                            </p>
+                        </div>
+
+                        <div class="read-button"><a href="#">En savoir plus</a></div>
+                    </div>
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                </li>
+            </ol>
+            <!-- Boutons de navigation -->
+            <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
                     </li>
-                    <!-- Slider 2 -->
-                    <li id="carousel__slide2"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <div class="article article2">
-                            <div class="article-title">
-                                <h3>Cult of Sacrifice</h3>
-                            </div>
-                            <div class="article-img"><img src="/image/cultOfSac.png" alt="">
-                            </div>
-                            <div class="article-content">
-                                <p>Date : 24/12/24</p>
-                                <p>A 20h00</p>
-                                <p>Prix d'entrée : PAF libre</p>
-                                <p>Leur Youtube : <a href="#">Cliquez ici</a></p>
-                                <p>Leur Spotify : <a href="#">Cliquez ici</a></p>
-                            </div>
-                            <div class="read-button"><a href="#">En savoir plus</a>
-                            </div>
-                        </div>
-                        <div class="carousel__snapper">
-                        </div>
-                            <a href="#carousel__slide1"
-                            class="carousel__prev">Go to previous slide</a>
-                            <a href="#carousel__slide3"
-                            class="carousel__next">Go to next slide</a>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
                     </li>
-                    <!-- Slider 3 -->
-                    <li id="carousel__slide3"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <div class="article article3">
-                            <div class="article-img"><img src="/image/jivay.png" alt=""></div>
-                            <div class="article-title">
-                                <h3>Guest brasseur</h3>
-                            </div>
-                            <div class="article-content">
-                                <p><strong><em><u>Le 05/05/24</u></em></strong></p>
-                                <p>Venez dégustez les bières de Jivay, le chef du culte de la bière en personne !</p>
-                            </div>
-            
-                            <div class="read-button"><a href="#">En savoir plus</a></div>
-                        </div>
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide2"
-                            class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide4"
-                            class="carousel__next">Go to next slide</a>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
                     </li>
-                    <!-- Slider 4 -->
-                    <li id="carousel__slide4"
-                        tabindex="0"
-                        class="carousel__slide">
-                        <div class="article article4">
-                            <div class="article-img"><img src="/image/brassin.jpg" alt=""></div>
-                            <div class="article-title">
-                                <h3>Nouveau brassin</h3>
-                            </div>
-                            <div class="article-content">
-                                <p><strong><em><u>Le 06/08/24</u></em></strong></p>
-                                <p>C'est la fin des vendanges et la bière nouvelle est enfin là ! 
-                                    Une multitude de nouvelles bières éphémères vous attendent avec de nouvelles saveurs !
-                                </p>
-                            </div>
-            
-                            <div class="read-button"><a href="#">En savoir plus</a></div>
-                        </div>
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide3"
-                        class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide1"
-                        class="carousel__next">Go to first slide</a>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
                     </li>
                 </ol>
-                <!-- Boutons de navigation -->
-                <aside class="carousel__navigation">
-                    <ol class="carousel__navigation-list">
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide1"
-                            class="carousel__navigation-button">Go to slide 1</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide2"
-                            class="carousel__navigation-button">Go to slide 2</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide3"
-                            class="carousel__navigation-button">Go to slide 3</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide4"
-                            class="carousel__navigation-button">Go to slide 4</a>
-                        </li>
-                    </ol>
-                </aside>
-             </section>
-            
-         </main>
-        <footer>
-            <section class="footer-container">
-                <aside class="infos">
-                    <img src="./image/logo nom.png" class="footer-logo" alt="">
-                    <p><i class="bi bi-house-door-fill"></i>742 Evergreen Terrace, 12345, Narnia</p>
-                    <a><i class="bi bi-envelope-fill"></i>Rien-a-voir-ici@brasserie-wilders.com</a>
-                    <p><i class="bi bi-phone-fill"></i>03.12.34.56.78</p>
-                </aside>
-                <nav class="footer-section">
-                    <h3>Sections :</h3>
-                    <a href="index.html">Accueil</a>
-                    <a href="beers.html">Nos bières</a>
-                    <a href="#top">Evènements</a>
-                    <a href="contacts.html">Nous contacter</a>
-                    <a href="about.html">A propos de nous</a>               
-                </nav>
-                <aside class="footer-horaires">
-                    <h3>Horaires d'ouverture</h3>
-                    <p>La semaine : 15h-22h</p>
-                    <p>Le vendredi : 17h-00h</p>
-                    <p>Le samedi : 17h-03h</p>
-                    <p>Le dimanche : fermé</p>
-                </aside>
-                <nav class="footer-reseaux">
-                    <!-- <h3>Réseaux sociaux :</h3> -->
-                    <div class="network-icons">
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                    </div>
-                    <img src="./image/logoab_eurofeuille_biologique.png" class="network-image" alt="">
-                </nav>
-            </section>
-        </footer>
-        <div class="trademark">
-            Coded by Alexandre, Julien and Philippe <br>
-            © WildCodeSchool promotion Février 2024
-        </div>
-    </body>
+            </aside>
+        </section>
+
+    </main>
+    <footer>
+        <section class="footer-container">
+            <aside class="infos">
+                <img src="./image/logo nom.png" class="footer-logo" alt="">
+                <p><i class="bi bi-house-door-fill"></i>742 Evergreen Terrace, 12345, Narnia</p>
+                <a><i class="bi bi-envelope-fill"></i>Rien-a-voir-ici@brasserie-wilders.com</a>
+                <p><i class="bi bi-phone-fill"></i>03.12.34.56.78</p>
+            </aside>
+            <nav class="footer-section">
+                <h3>Sections :</h3>
+                <a href="index.html">Accueil</a>
+                <a href="beers.html">Nos bières</a>
+                <a href="#top">Evènements</a>
+                <a href="contacts.html">Nous contacter</a>
+                <a href="about.html">A propos de nous</a>
+            </nav>
+            <aside class="footer-horaires">
+                <h3>Horaires d'ouverture</h3>
+                <p>La semaine : 15h-22h</p>
+                <p>Le vendredi : 17h-00h</p>
+                <p>Le samedi : 17h-03h</p>
+                <p>Le dimanche : fermé</p>
+            </aside>
+            <nav class="footer-reseaux">
+                <!-- <h3>Réseaux sociaux :</h3> -->
+                <div class="network-icons">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+                <img src="./image/logoab_eurofeuille_biologique.png" class="network-image" alt="">
+            </nav>
+        </section>
+    </footer>
+    <div class="trademark">
+        Coded by Alexandre, Julien and Philippe <br>
+        © WildCodeSchool promotion Février 2024
+    </div>
+</body>
+
 </html>
