@@ -4,14 +4,18 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-}
 
 
 /* Définition de la police générale du site  */
 :root {
     --primary-font: "Barlow Semi Condensed";
+    --secondary-color: rgb(225 199 52);
+}
+
+body {
+    margin: 0;
+    font-style: var(--primary-font);
+    line-height: 1.5;
 }
 
 /* Style du header */
@@ -53,6 +57,11 @@ header {
     color: white;
 }
 
+.menu-header-pages a:hover {
+    color: var();
+}
+
+
 .menu-header-pages {
     display: flex;
     justify-content: center;
@@ -61,7 +70,7 @@ header {
 }
 
 .menu-header-pages :nth-child(2) {
-    color: rgb(225 199 52);
+    color: var(--secondary-color);
 
 }
 
@@ -74,7 +83,7 @@ header {
 
 .social-link a {
     text-decoration: none;
-    color: rgb(225 199 52);
+    color: var(--secondary-color);
 
 }
 
@@ -114,16 +123,6 @@ main section {
     margin: 3rem auto;
 }
 
-@media screen and (width >=1700px) {
-    main section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 3rem 10rem;
-        gap: 5rem
-    }
-}
-
-
 .page-title {
     display: flex;
     align-items: center;
@@ -162,7 +161,7 @@ article h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: rgb(225 199 52);
+    color: var(--secondary-color);
     ;
 
 }
@@ -242,7 +241,7 @@ progress {
     left: 0;
     height: 100%;
     width: 35%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 /* **la Yavuz** progress bar  */
@@ -254,7 +253,7 @@ progress {
     left: 0;
     height: 100%;
     width: 90%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 .yavuz .progress-container-corps::before {
@@ -264,7 +263,7 @@ progress {
     left: 0;
     height: 100%;
     width: 80%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 /* **L'Eleonore ** progress bar  */
@@ -276,7 +275,7 @@ progress {
     left: 0;
     height: 100%;
     width: 25%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 .eleonore .progress-container-corps::before {
@@ -286,7 +285,7 @@ progress {
     left: 0;
     height: 100%;
     width: 20%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 /* **La St benoit ** progress bar  */
@@ -298,7 +297,7 @@ progress {
     left: 0;
     height: 100%;
     width: 35%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 .benoit .progress-container-corps::before {
@@ -308,7 +307,7 @@ progress {
     left: 0;
     height: 100%;
     width: 70%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 /* **L'ayoub ** progress bar  */
@@ -320,7 +319,7 @@ progress {
     left: 0;
     height: 100%;
     width: 40%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 .ayoub .progress-container-corps::before {
@@ -330,7 +329,7 @@ progress {
     left: 0;
     height: 100%;
     width: 35%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 /* **L'Anaé ** progress bar  */
@@ -342,7 +341,7 @@ progress {
     left: 0;
     height: 100%;
     width: 50%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 .anae .progress-container-corps::before {
@@ -352,7 +351,7 @@ progress {
     left: 0;
     height: 100%;
     width: 45%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 /* **La Gab' ** progress bar  */
@@ -364,7 +363,7 @@ progress {
     left: 0;
     height: 100%;
     width: 45%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 .gab .progress-container-corps::before {
@@ -374,7 +373,7 @@ progress {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 /* **La Gab' ** progress bar  */
@@ -386,7 +385,7 @@ progress {
     left: 0;
     height: 100%;
     width: 45%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 .mat .progress-container-corps::before {
@@ -396,7 +395,7 @@ progress {
     left: 0;
     height: 100%;
     width: 20%;
-    background: rgb(225 199 52);
+    background: var(--secondary-color);
 }
 
 /* Délimitation du footer */
@@ -480,7 +479,7 @@ footer .infos {
 }
 
 .footer-section a:hover {
-    color: rgb(225 199 52);
+    color: var(--secondary-color);
     transition: color 0.5s;
 }
 

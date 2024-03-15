@@ -4,14 +4,18 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
 
 
 /* Définition de la police générale du site  */
 :root {
   --primary-font: "Barlow Semi Condensed";
+  --secondary-color: rgb(225 199 52);
+}
+
+body {
+  margin: 0;
+  font-style: var(--primary-font);
+  line-height: 1.5;
 }
 
 /* Style du header */
@@ -61,13 +65,17 @@ header {
   position: relative;
 }
 
+.menu-header-pages a:hover {
+  color: var(--secondary-color);
+}
+
 .menu-header-pages :nth-child(3) {
-  color: rgb(225 199 52);
+  color: var(--secondary-color);
 
 }
 
 .menu-header-pages a:hover {
-  color: rgb(225 199 52);
+  color: var(--secondary-color);
   transition: color 0.5s;
 }
 
@@ -80,7 +88,7 @@ header {
 
 .social-link a {
   text-decoration: none;
-  color: rgb(225 199 52);
+  color: var(--secondary-color);
 
 }
 
@@ -320,11 +328,11 @@ li {
 }
 
 .carousel__navigation-button:active {
-  background-color: rgb(225 199 52);
+  background-color: var(--secondary-color);
 }
 
 .carousel__navigation-button:hover {
-  background-color: rgb(225 199 52);
+  background-color: var(--secondary-color);
 }
 
 
@@ -427,7 +435,7 @@ FIN DU CAROUSEL */
 }
 
 .article a:hover {
-  color: rgb(225 199 52);
+  color: var(--secondary-color);
 }
 
 .read-button {
@@ -533,7 +541,7 @@ footer .infos {
 }
 
 .footer-section a:hover {
-  color: rgb(225 199 52);
+  color: var(--secondary-color);
   transition: color 0.5s;
 }
 
