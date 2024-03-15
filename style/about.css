@@ -316,7 +316,7 @@ footer .infos {
 @media screen and (max-width: 480px) {}
 
 @media screen and (max-width:768px) {
-  
+
     .menu-header-pages {
         display: none;
     }
@@ -385,4 +385,10 @@ footer .infos {
         margin-inline: 0rem;
     }
 
+}
+
+@media screen and (max-width:1200px) {
+    .menu-header-pages {
+        margin-top: 1.5rem;
+    }
 }

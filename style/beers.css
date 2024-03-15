@@ -628,6 +628,12 @@ footer .infos {
 
 }
 
+@media screen and (max-width:1200px) {
+    .menu-header-pages {
+        margin-top: 1.5rem;
+    }
+}
+
 @media screen and (width >=1700px) {
     main section article {
         display: flex;
