@@ -376,13 +376,32 @@ footer .infos {
     .footer-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         align-items: center;
         max-height: 100%;
         justify-items: center;
-    }
+      }
 
     .footer-container>* {
         margin-inline: 0rem;
     }
+
+    .footer-logo{
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    
+      .footer-reseaux{
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    
+      .footer-container>* {
+        margin-inline: 0rem;
+      }
+    
+      .footer-section{
+        display: none;
+      }
+    
 }
