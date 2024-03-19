@@ -16,12 +16,15 @@ body {
     margin: 0;
     font-style: var(--primary-font);
     line-height: 1.5;
+    background-image: url(/image/vline.png);
+    background-repeat: repeat-y;
+    background-position: 4.4vw;
 }
 
 /* Style du header */
 
 header {
-    height: 45vh;
+    height: 50vh;
     background-image: url(/image/back_1.jpg);
     background-position: center, center;
     background-repeat: no-repeat;
@@ -56,11 +59,6 @@ header {
     font-size: 1.5rem;
     color: white;
 }
-
-.menu-header-pages a:hover {
-    color: var(--secondary-color);
-}
-
 
 .menu-header-pages {
     display: flex;
@@ -102,14 +100,6 @@ header {
 }
 
 /* Style du Main */
-/* Style du Main */
-
-body {
-    background-image: url(/image/vline.png);
-    background-repeat: repeat-y;
-    background-position: 6%;
-
-}
 
 main {
     height: 100%;
@@ -123,7 +113,7 @@ main {
 }
 
 .titre {
-    margin: auto;
+    margin-left: 2vw;
     max-width: 1500px;
     margin-bottom: 2rem;
 }

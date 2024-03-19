@@ -5,7 +5,7 @@
     <label class="menu-burger" for="toggle">☰</label>
     <input type="checkbox" id="toggle">
     <div class="menu-header-pages">
-        <a href="/index.php">Acceuil</a>
+        <a href="/index.php">Accueil</a>
         <a href="/beers.php">Nos bières</a>
         <a href="/events.php">Evénements</a>
         <a href="/contacts.php">Contacts</a>

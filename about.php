@@ -26,9 +26,9 @@
                     <h3>Alexandre</h3>
                 </div>
                 <div class="article-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatum? Officiis veniam
-                        tenetur, eveniet aliquam adipisci ad commodi nulla repudiandae nihil, hic laborum non! Id
-                        laboriosam fugiat molestias velit libero.</p>
+                    <p>Sa curiosité insatiable l'a souvent conduit à explorer les nuances infinies des brasseries
+                        artisanales. Bien qu'il préfère généralement la solitude, les rencontres autour d'une bonne
+                        bière lui permettent de se libérer de sa coquille, révélant un côté sociable et chaleureux.</p>
                 </div>
 
                 <!-- <div class="read-button"><a href="#">En savoir plus</a></div> -->
