@@ -160,39 +160,47 @@ main {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 10px 1px #2a2a2a57;
+    height: 35rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
 .article h3 {
     margin: 0;
 }
 
-/* .article img {
-    width: 10rem;
-    padding: 1rem 1rem;
-    border-radius: 50px;
-} */
+.article-img {
+    height: 185px;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+}
+
 
 .new-anae {
     width: 160px;
     height: 185px;
-    margin-bottom: 1rem;
     border-radius: 16px;
 
 }
 
 .cult {
     width: 250px;
-    height: 173px;
-    margin-bottom: 1rem;
+    height: 100%;
     border-radius: 16px;
 }
 
 .cuve {
-    width: 200px;
-    margin-bottom: 1rem;
+    height: 100%;
     border-radius: 16px;
+}
+
+.article-title {
+    height: 29px;
+}
+
+.article-content {
+    height: 200px;
 }
 
 .article-content p {
@@ -205,7 +213,6 @@ main {
 .read-button {
     background: linear-gradient(#000000, #807f7f);
     border-radius: 10px;
-    margin-bottom: 1rem;
     box-shadow: 0px 2px 12px 2px #2a2a2a80;
 }
 
