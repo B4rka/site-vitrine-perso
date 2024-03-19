@@ -422,14 +422,6 @@ footer .infos {
         height: 70vh;
     }
 
-    body {
-        background-position: 8vw;
-    }
-
-    main {
-        margin-top: 1rem;
-    }
-
     .titre {
         display: flex;
         align-self: flex-start;
