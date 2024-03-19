@@ -11,24 +11,7 @@
 
 <body>
     <header>
-        <nav class="menu-header">
-            <div class="logo-neg">
-                <img src="/image/logo-neg.png" alt="logo de la marque Les 3 Wilders">
-            </div>
-            <label class="menu-burger" for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
-            <div class="menu-header-pages">
-                <a href="#top">Acceuil</a>
-                <a href="/beers.html">Nos bières</a>
-                <a href="/events.html">Evénements</a>
-                <a href="/contacts.html">Contacts</a>
-                <a href="/about.html">A propos</a>
-            </div>
-            <div class="social-link">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-            </div>
-        </nav>
+        <?php include './header.php';?>
     </header>
     <main>
         <div class="titre">
@@ -81,12 +64,12 @@
         <section class="footer-container">
             <div class="footer-logo">
                 <img src="./image/logo nom.png" class="footer-logo" alt="">
-                </div>
-                <aside class="infos">
-                    <p><i class="bi bi-house-door-fill"></i>742 Evergreen Terrace, 12345, Narnia</p>
-                    <a><i class="bi bi-envelope-fill"></i>Rien-a-voir-ici@brasserie-wilders.com</a>
-                    <p><i class="bi bi-phone-fill"></i>03.12.34.56.78</p>
-                </aside>
+            </div>
+            <aside class="infos">
+                <p><i class="bi bi-house-door-fill"></i>742 Evergreen Terrace, 12345, Narnia</p>
+                <a><i class="bi bi-envelope-fill"></i>Rien-a-voir-ici@brasserie-wilders.com</a>
+                <p><i class="bi bi-phone-fill"></i>03.12.34.56.78</p>
+            </aside>
             <nav class="footer-section">
                 <h3>Sections :</h3>
                 <a href="#top">Accueil</a>
