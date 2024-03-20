@@ -13,7 +13,7 @@
         <a href="index.php">Accueil</a>
         <a href="beers.php">Nos bières</a>
         <a href="events.php">Evènements</a>
-        <a href="#top">Nous contacter</a>
+        <a href="contacts.php">Nous contacter</a>
         <a href="about.php">A propos de nous</a>           
     </nav>
     <aside class="footer-horaires">
