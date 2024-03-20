@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
     <meta charset="UTF-8">
     <html lang="fr">
@@ -57,7 +56,11 @@
             <?php foreach ($ephemereBeer as $name => $biere) : ?>
                     <article class="<?=$name?>">
                         <img src="/image/bottle-beer.png" alt="bouteille de bière" class="imgbeer">
-                        <h2><?=$biere['nom']?></h2>
+                        <h2><?=$biere['nom'] ?><?php
+                    if ($biere['soldout']===true){
+                        echo "<i class='soldout'>SOLD OUT</i>";
+                    }
+                    ?></h2>
                         <ul>
                             <li><strong><?=$biere['type']?></strong></li>
                             <li><strong><?=$biere['alcool']?></strong></li>
