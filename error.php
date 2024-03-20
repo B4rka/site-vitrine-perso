@@ -33,31 +33,25 @@
                         </ul>
                     </div>
                     <div class="reservation">
-                        <h3>Contact / Réservation</h3>
-                        <form action="mail-form.php#reservation" method="post">
-                            <div class="form-group">
-                                <label for="name">Votre nom :</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
+                        <h3>Nous rencontrons les problèmes suivants<br>pour traiter votre demande :</h3>
 
-                            <div class="form-group">
-                                <label for="email">Votre e-mail :</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Votre message :</label>
-                                <textarea name="message" id="message" rows="4" required></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="form-button"><input type="submit" value="Envoyer">
+                        <div class="error-message">
+                        <p> </p>
+            <ul>
+                <?php foreach($errors as $error) : ?>
+                    <li><?= $error ?></li>
+                <?php endforeach; ?>
+            </ul>
+            <div class="form-group">
+                                    <div class="form-button">
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
+                <a href="contact.php">Retour au formulaire</a>
+                        </div>
+                                
 
-                    </div>
-                </div>
+                        </div>
+                        </div>
                 <div class="maps">
                     <h3>Comment nous trouver ?</h3>
                     <iframe
@@ -78,3 +72,46 @@
 </body>
 
 </php>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <main>
+        <div class="errorPanel">
+            <img src="images/false.gif" alt="False !">
+            <p>Nous rencontrons les problèmes suivants pour traiter votre demande : </p>
+            <ul>
+                <?php foreach($errors as $error) : ?>
+                    <li><?= $error ?></li>
+                <?php endforeach; ?>
+            </ul>
+            <p>
+                <a href="contact.php">Retour au formulaire</a>
+            </p>
+        </div>
+    </main>
+    
+</body>
+</html>
