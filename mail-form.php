@@ -1,3 +1,36 @@
+<?php
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+foreach ($_POST as $key=>$value) {
+    $data[$key] = trim($value);
+}
+
+$errors = [];
+
+if (empty($data['name'])) {
+    $errors[] = 'Merci d\'indiquer votre nom.';
+}                   
+if (empty($data['email'])) {
+    $errors[] = 'Merci d\'indiquer votre email.';
+}
+if (empty($data['message'])) {
+    $errors[] = 'Vous devez écrire votre message avant de cliquer sur \'Envoyer\'';
+}
+if (mb_strlen($data['message']) < 30 || mb_strlen($data['message']) > 300) {
+    $errors[] = 'Le message doit faire entre 30 et 300 caractères';
+}
+if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+    $errors[] = 'L\'adresse mail n\'est pas valide.';
+}
+                    
+if (!empty($errors)) {
+    require 'error.php';
+    die();
+}
+?>
+
 <!DOCTYPE html>
 
 <head>
@@ -32,29 +65,24 @@
                                 contact@les3wilders.com</li>
                         </ul>
                     </div>
-                    <div class="reservation">
-                        <h3>Contact / Réservation</h3>
-                        <form action="mail-form.php#reservation" method="post">
-                            <div class="form-group">
-                                <label for="name">Votre nom :</label>
-                                <input type="text" id="name" name="name" required>
+                    <div class="reservation" id="reservation">
+                        <h3>Votre message a bien été envoyé,<br>nous reviendrons vers vous au plus vite.</h3>
+
+                        <div class="message-return">
+                    <h3>Récapitulatif :</h3>
+
+                        <ul>
+                <li>Votre nom : <span><?=htmlentities($name); ?></span></li>
+                <li>Votre email : <span><?=htmlentities($email); ?></span></li>
+                <li>Votre message :
+                    <p><?=htmlentities($message); ?></p>
+                </li>
+            </ul>
+                            <div class="form-group-button">
+                                <div class="return-button"><a href="index.php">Retour à l'accueil</a></div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="email">Votre e-mail :</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Votre message :</label>
-                                <textarea name="message" id="message" rows="4" required></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="form-button"><input type="submit" value="Envoyer">
-                                </div>
-                            </div>
-                        </form>
+                        </div>
 
                     </div>
                 </div>
