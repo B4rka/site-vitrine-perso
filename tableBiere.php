@@ -43,6 +43,7 @@ $ephemereBeer= [
         'alcool'=> 'alcool: 6.6%',
         'description' => "Bière ambrée au seigle. Des notes caramélisées accompagnent les arômes épicés du seigle sur une
         bière onctueuse. Parfaite pour accompagner vos seances bronzages sous le soleil Niçois.",
+        'soldout'=> false,
     ],
     'gab' => [
         'nom'=> 'La Gab\'',
@@ -51,12 +52,14 @@ $ephemereBeer= [
         'description' => "Bière \"noir\" de seigle et au calvados vielli 24 mois en barrique. Des notes épicé accompagnent
         les arômes de café et de pomme. Attention car cette bière ne tartine pas votre pain... mais bien
         votre caboche ! Le lendemain matin risque d'être fort compliqué...",
+        'soldout'=> false,
     ],
     'mat' => [
-        'nom'=> 'La Mat\' <i class="soldout">SOLD OUT</i>',
+        'nom'=> 'La Mat\'',
         'type'=> 'Type: Triple',
         'alcool'=> 'alcool: 8%',
         'description' => "Bière de type belge. Légérement sucrée et peu amère. Parfaite en hiver au coin du feu entre amis
         sur une peau de bête... on ira pas dans les details !",
+        'soldout'=> true,
     ],
 ];
