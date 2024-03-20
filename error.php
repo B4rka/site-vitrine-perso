@@ -46,7 +46,7 @@
                                     <div class="form-button">
                                     </div>
                                 </div>
-                <a href="contact.php">Retour au formulaire</a>
+                <a href="contacts.php">Retour au formulaire</a>
                         </div>
                                 
 
