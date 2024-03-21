@@ -4,7 +4,7 @@
         <img src="./image/logo nom.png" class="footer-logo" alt="">
         </div>
         <aside class="infos">
-            <p><i class="bi bi-house-door-fill"></i>742 Evergreen Terrace, 12345, Narnia</p>
+            <p><i class="bi bi-house-door-fill"></i>47 Route de l'Hôpital, 67100, Strasbourg</p>
             <a><i class="bi bi-envelope-fill"></i>Rien-a-voir-ici@brasserie-wilders.com</a>
             <p><i class="bi bi-phone-fill"></i>03.12.34.56.78</p>
         </aside>
