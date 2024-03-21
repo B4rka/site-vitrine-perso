@@ -17,7 +17,7 @@
     <main>
         <div class="titre">
             <div class="page-title">
-                <p>Les classiques</p>
+                <p>Les Classiques</p>
             </div>
         </div>
         <section class="classic">
@@ -88,7 +88,8 @@
         <?php include 'footer.php'; ?>
     </footer>
     <div class="trademark">
-        Coded by Alexandre, Julien and Philippe
+        Coded by Alexandre, Julien and Philippe <br>
+        © WildCodeSchool promotion Février 2024
     </div>
 </body>
 </html>
