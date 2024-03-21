@@ -15,9 +15,11 @@
 
 <body>
     <main>
+    <div class="titre">
         <div class="page-title">
             <p>Evènements</p>
         </div>
+    </div>
         <section class="carousel" aria-label="Gallery">
             <ol class="carousel__viewport">
                 <!-- Slider 1 -->

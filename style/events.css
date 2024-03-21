@@ -14,8 +14,11 @@
 
 body {
   margin: 0;
-  font-style: var(--primary-font);
   line-height: 1.5;
+  background-image: url(/image/vline.png);
+  background-repeat: repeat-y;
+  background-position: 4.4vw;
+  font-family: var(--primary-font);
 }
 
 /* Style du header */
@@ -102,14 +105,6 @@ header {
 
 /* Style du Main */
 
-body {
-  background-image: url(/image/vline.png);
-  background-repeat: repeat-y;
-  background-position: 4.4vw;
-  font-family: var(--primary-font);
-  line-height: 1.5;
-}
-
 main {
   height: 100%;
   display: inline-block;
@@ -122,7 +117,11 @@ main {
   margin-bottom: 5rem;
 }
 
-
+.titre {
+  margin-left: 2vw;
+  max-width: 1500px;
+  margin-bottom: 2rem;
+}
 
 .page-title {
   display: flex;
@@ -666,7 +665,7 @@ footer .infos {
   }
 
   main {
-    margin-top: 1rem;
+    margin-top: 3rem;
 
   }
 
