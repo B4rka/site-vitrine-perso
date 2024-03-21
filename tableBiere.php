@@ -63,3 +63,53 @@ $ephemereBeer= [
         'soldout'=> true,
     ],
 ];
+$about= [
+    'Alexandre' => [
+        'nom'=> "Alexandre",
+        'description' => "Sa curiosité insatiable l'a souvent conduit à explorer les nuances infinies des brasseries
+        artisanales. Bien qu'il préfère généralement la solitude, les rencontres autour d'une bonne
+        bière lui permettent de se libérer de sa coquille, révélant un côté sociable et chaleureux.",
+    ],
+    'julien' => [
+        'nom'=> 'Julien',
+        'description' => "Passionné de tout type d'alcool, musicien à ses heures perdues et amoureux des bonnes choses. Il est forcément partant pour ce genre de projet avec un enthousiasme et une énergie digne d'un grimpeur dans le parc du Yosemite.",
+    ],
+    'phil' => [
+        'nom'=> 'Philippe',
+        'description' => "Passioné de jeux vidéos depuis tout petit ainsi que mordu de musique et de cinéma, Philippe aime
+        aussi
+        la bière. Il s'est donc mis en tête d'en fabriquer. Mais seulement des bonnes. Et des
+        artisanales.
+        Pleines d'amour et de savoir-faire.",
+    ],
+];
+$news= [
+    'new-anae' => [
+        'titre'=> "L'Anaé",
+        'description' => "On vous a concocté notre dernière éphémère ! Une Rye Amber Ale tout juste sortie de fermentation,
+        parfaite pour ce début de primptemps !.",
+        'image' => 'new-anae.jpg',
+        'class' => 'new-anae',
+        'link' => 'beers.php#anae',
+    ],
+    'cultOfSac' => [
+        'titre'=> 'On va faire du sale !',
+        'description' => "Enfin ! On a reussi à booker notre petit coup de coeur pour vous le faire partager en sirotant
+        vos bières préférées. On aura l'honneur d'acceuillir <strong>Cult Of Sacrifice</strong> pour
+        bien
+        nettoyer vos esgourdes !",
+        'image' => 'cultOfSac.png',
+        'class' => 'cult',
+        'link' => 'events.php#carousel__slide2',
+    ],
+    'newCuve' => [
+        'titre'=> 'La grosse Bertha',
+        'description' => "La fammille s'agrandit ! parce que vous êtes vraiment des gros soulard, vous nous avez forcé à
+        investir dans une grosse cuve de fermentation pour que vous puissiez encore et toujours plus
+        boire. <strong>Encore MERCI !</strong> tout ceci c'est grâce à <strong>vous</strong>, et à votre
+        foie...",
+        'image' => 'cuve.jpg',
+        'class' => 'cuve',
+        'link' => '#',
+    ],
+];
