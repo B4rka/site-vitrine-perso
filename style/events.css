@@ -872,14 +872,14 @@ footer .infos {
   .article3 img {
     width: 100%;
     height: auto;
-
+  }
 
   .footer-horaires p,
   .footer-horaires h3 {
     color: var(--secondary-color);
-
   }
 }
+
 
 @media screen and (max-width:1200px) {
   .menu-header-pages {
