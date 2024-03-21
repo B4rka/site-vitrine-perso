@@ -39,7 +39,7 @@
                     <h3>Julien</h3>
                 </div>
                 <div class="article-content">
-                    <p>Passionné de tout type d'alcool, musicien à ses heures perdues et amoureux des bonnes choses. Il est forcément partant pour ce genre de projet avec un enthousiasme et une énergie digne d'un pedophile devant une école maternelle. </p>
+                    <p>Passionné de tout type d'alcool, musicien à ses heures perdues et amoureux des bonnes choses. Il est forcément partant pour ce genre de projet avec un enthousiasme et une énergie digne d'un grimpeur dans le parc du Yosemite. </p>
                 </div>
                 <!-- <div class="read-button"><a href="#">En savoir plus</a></div> -->
             </div>

@@ -68,5 +68,4 @@
         © WildCodeSchool promotion Février 2024
     </div>
 </body>
-
 </php>
