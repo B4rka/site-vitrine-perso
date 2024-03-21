@@ -24,7 +24,6 @@
         <p>Le dimanche : fermé</p>
     </aside>
     <nav class="footer-reseaux">
-        <h3>Réseaux sociaux :</h3>
         <div class="network-icons">
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>

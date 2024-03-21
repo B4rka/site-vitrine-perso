@@ -537,6 +537,11 @@ footer .infos {
 -webkit-text-stroke-color: black; */
 }
 
+.footer-horaires p,
+.footer-horaires h3 {
+    color: var(--secondary-color);
+}
+
 /* Boite des réseaux */
 .footer-reseaux {
     display: flex;
@@ -688,11 +693,6 @@ footer .infos {
         max-width: none;
         margin-top: 0.5rem;
         margin-right: 2rem;
-    }
-
-    .footer-horaires p,
-    .footer-horaires h3 {
-        color: var(--secondary-color);
     }
 }
 
