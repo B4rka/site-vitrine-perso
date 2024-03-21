@@ -307,6 +307,11 @@ font-weight: bold;
     font-size: 2rem;
 }
 
+.footer-horaires p,
+.footer-horaires h3 {
+    color: var(--secondary-color);
+}
+
 /* Taille image agri */
 .network-image {
     width: 150px;
@@ -409,12 +414,6 @@ font-weight: bold;
     .footer-section {
         display: none;
     }
-
-    .footer-horaires p,
-    .footer-horaires h3 {
-        color: var(--secondary-color);
-    }
-
 }
 
 @media screen and (max-width:1200px) {

@@ -606,6 +606,11 @@ footer .infos {
   text-align: center;
 }
 
+.footer-horaires p,
+.footer-horaires h3 {
+  color: var(--secondary-color);
+}
+
 @media screen and (max-width: 480px) {}
 
 @media screen and (max-width:768px) {
@@ -878,6 +883,7 @@ footer .infos {
   .footer-horaires h3 {
     color: var(--secondary-color);
   }
+
 }
 
 

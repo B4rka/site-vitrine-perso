@@ -156,6 +156,7 @@ main {
     background-color: #e2e2e2;
     border-radius: 20px;
     width: 22rem;
+    min-width: 18rem;
     min-height: 490px;
     display: flex;
     flex-direction: column;
@@ -357,6 +358,11 @@ footer .infos {
     text-align: center;
 }
 
+.footer-horaires p,
+.footer-horaires h3 {
+    color: var(--secondary-color);
+}
+
 
 
 @media screen and (max-width: 480px) {}
@@ -373,6 +379,11 @@ footer .infos {
 
     .social-link {
         display: none;
+    }
+
+    .article-img {
+        height: 170px;
+
     }
 
     .menu-burger {
@@ -455,10 +466,7 @@ footer .infos {
         display: none;
     }
 
-    .footer-horaires p,
-    .footer-horaires h3 {
-        color: var(--secondary-color);
-    }
+
 
 }
 

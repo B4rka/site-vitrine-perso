@@ -419,6 +419,11 @@ footer .infos {
     text-align: center;
 }
 
+.footer-horaires p,
+.footer-horaires h3 {
+    color: var(--secondary-color);
+}
+
 @media screen and (max-width : 768px) {
     .menu-header-pages {
         display: none;
@@ -560,11 +565,6 @@ footer .infos {
 
     .footer-section {
         display: none;
-    }
-
-    .footer-horaires p,
-    .footer-horaires h3 {
-        color: var(--secondary-color);
     }
 
 }
