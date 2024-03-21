@@ -22,7 +22,7 @@ if (mb_strlen($data['message']) < 30 || mb_strlen($data['message']) > 300) {
     $errors[] = 'Le message doit faire entre 30 et 300 caractères';
 }
 if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-    $errors[] = 'L\'adresse mail n\'est pas valide.';
+    $errors[] = 'L\'adresse email n\'est pas valide.';
 }
                     
 if (!empty($errors)) {

@@ -27,9 +27,9 @@
                         <ul>
                             <li>47 Route de l'Hôpital</li>
                             <li>67000 Strasbourg</li>
-                            <li><br><i class="bi bi-phone"></i> 03 88 12 34 56</li>
+                            <li><br><i class="bi bi-phone"></i> 03 12 34 56 78</li>
                             <li><i class="bi bi-envelope-at"></i>
-                                contact@les3wilders.com</li>
+                            Rien-a-voir-ici@brasserie-wilders.com</li>
                         </ul>
                     </div>
                     <div class="reservation">
