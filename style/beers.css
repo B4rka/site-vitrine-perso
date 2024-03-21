@@ -475,10 +475,10 @@ footer .bi-facebook {
 }
 
 footer .bi-instagram {
-color: var(--secondary-color);
-/* background: linear-gradient(to top, yellow, purple); */
-border-radius: 7px;
-padding: 2px;
+    color: var(--secondary-color);
+    /* background: linear-gradient(to top, yellow, purple); */
+    border-radius: 7px;
+    padding: 2px;
 }
 
 .footer-container {
@@ -531,9 +531,9 @@ footer .infos {
 }
 
 .footer-horaires p {
-color: black;
-font-weight: bold;
-/* -webkit-text-stroke-width: 0.2px;
+    color: black;
+    font-weight: bold;
+    /* -webkit-text-stroke-width: 0.2px;
 -webkit-text-stroke-color: black; */
 }
 
@@ -620,8 +620,9 @@ font-weight: bold;
         height: 70vh;
     }
 
-    .carousel {
-        width: 490px;
+    footer {
+        height: 450px;
+        padding: 1rem;
     }
 
     .footer-container {
@@ -687,6 +688,11 @@ font-weight: bold;
         max-width: none;
         margin-top: 0.5rem;
         margin-right: 2rem;
+    }
+
+    .footer-horaires p,
+    .footer-horaires h3 {
+        color: var(--secondary-color);
     }
 }
 
