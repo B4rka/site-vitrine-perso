@@ -76,7 +76,9 @@
                         </div>
                         <div class="article-content">
                             <p><strong><em><u>Le 05/05/24</u></em></strong></p>
-                            <p>Venez dégustez les bières de Jivay, le chef du culte de la bière en personne !</p>
+                            <p>Venez dégustez les bières de Jivay, le chef du culte de la bière en personne !
+                                Entre nouvelles bières, découvertes exotiques et vieux banger, ne ratez pas cette occasion !
+                            </p>
                         </div>
 
                         <div class="read-button"><a href="#">En savoir plus</a></div>

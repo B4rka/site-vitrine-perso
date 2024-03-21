@@ -434,8 +434,14 @@ FIN DU CAROUSEL */
 
 .article img {
   width: 250px;
+  height: 250px;
   padding: 1rem 1rem;
   border-radius: 25px;
+}
+
+.article3 img {
+  width: 200px;
+  height: 250px;
 }
 
 .article-content p {
