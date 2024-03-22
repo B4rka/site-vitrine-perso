@@ -38,7 +38,7 @@
                             <p><i class="bi bi-spotify"> : </i><a href="https://open.spotify.com/intl-fr/artist/27h4dOofFl1RnVBvl3Ap7c?si=CkbEeskDRSmt6lt0pANhVg" target="_blank">Cliquez ici</a></p>
                         </div>
 
-                        <div class="read-button"><a href="index.php#top">En savoir plus</a>
+                        <div class="read-button"><a href="https://www.facebook.com/resow.band" target="_blank">En savoir plus</a>
                         </div>
                     </div>
                     <div class="carousel__snapper">
