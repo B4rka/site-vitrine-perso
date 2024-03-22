@@ -34,8 +34,8 @@
                             <p>Date : 12/12/24</p>
                             <p>A 19h30 (Plutôt 20h c'est des zicos, lol)</p>
                             <p>Prix d'entrée : 5€</p>
-                            <p><a href=""></a><i class="bi bi-youtube"></i> : <a href="#">Cliquez ici</a></p>
-                            <p><i class="bi bi-spotify"> : </i><a href="#">Cliquez ici</a></p>
+                            <p><a href=""></a><i class="bi bi-youtube"></i> : <a href="https://youtu.be/_AT4H5fjFUI" target="_blank">Cliquez ici</a></p>
+                            <p><i class="bi bi-spotify"> : </i><a href="https://open.spotify.com/intl-fr/artist/27h4dOofFl1RnVBvl3Ap7c?si=CkbEeskDRSmt6lt0pANhVg" target="_blank">Cliquez ici</a></p>
                         </div>
 
                         <div class="read-button"><a href="index.php#top">En savoir plus</a>
